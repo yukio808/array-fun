@@ -7,10 +7,9 @@ module.exports = {
       return result1;
     }
   }
-  },
-  module.exports = {
-    min : function () {
-    }
-    // body...
-  
 };
+ // module.exports = {
+ //   min : function () {
+
+    // body...
+//}
