@@ -29,5 +29,20 @@ module.exports = {
         }
       }
       return false;
-  }
+  },
+    uniq :function (array){
+    var c = [], diff=[];
+                  
+    for(var i=0;i<array.length;i++){
+      if(c[array[i]]) delete c[array[i]];
+      c[array[i]]=true;
+
+    }
+
+      for(var k in c)
+      diff.push(Number(k));
+
+
+      return diff;
+    }
 };
