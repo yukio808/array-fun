@@ -7,9 +7,13 @@ If the collection is empty or falsey Infinity is returned. */
 var arrayfun = require ('../arrayfun');
 
 describe("arrayfun", function() {
-  it("must have a function() that takes the minimum value in an array");
-  expext (result).toBe(0);
-  var test_array2 = [0, 6, 8 , 1, 7, 5, 10] ;
   
+  it("function must return the minimum element of the argument (array)", function() {
+    var test_array2 = [0, 6, 8 , 1, 7, 5, 10] ;
+    var result = arrayfun.min(test_array2);
+      expect (result ).toBe(0);
 
+    var result2 = arrayfun.min(test_array2);
+      expect (result2).toEqual(0);
+    });
 });

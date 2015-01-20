@@ -3,20 +3,19 @@
 Description
 Retrieves the maximum value of a collection.
 If the collection is empty or falsey -Infinity is returned.*/
-var arraymax = require ('../arrayfun');
+var arrayfun = require ('../arrayfun');
 
-describe("arraymax", function() {
-  
-  it ("Must have a function named max()", function(){
-    expect(array.max ).toBe(9);
+describe("testing the max function", function() {
+  it (" expect function to be named max", function() {
+    expect(arrayfun.max).toBeDefined();
   });
-  it("first() function must return the minimum element of the argument (array)", function() {
-    var test_array = [1, 2, 3, 4, 5, 6, 7, 8, 9 ];
 
-    var result = arraymax.max(test_array);
-      expect (result ).toBe(9);
+  it("function must return the maximum element of the argument (array)", function() {
+    var test_array = [1, 2, 3, 4, 5, 6, 7, 8, 90 ];
 
-    var result2 = arraymax.max(test_array);
-      expect (result2).toEqual([8]);
+    var result = arrayfun.max(test_array);
+      expect (result ).toBe(90);
   });
 });
+
+//status : tested complete works took out the naem array requiorement.

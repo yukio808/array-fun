@@ -6,3 +6,4 @@ Creates an array excluding all values of the provided arrays using strict equali
 var arrayfun = require ('../arrayfun');
 
 describe("arrayfun", function() {
+});

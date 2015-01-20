@@ -10,3 +10,4 @@ strict equality for comparisons*/
 var arrayfun = require ('../arrayfun');
 
 describe("arrayfun", function() {
+});
