@@ -15,7 +15,9 @@ describe("testing the max function", function() {
 
     var result = arrayfun.max(test_array);
       expect (result ).toBe(90);
+
+    
   });
 });
 
-//status : tested complete works took out the naem array requiorement.
+//status :\
